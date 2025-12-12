@@ -1,0 +1,29 @@
+ .resetGame-Container {
+      display: flex;
+      justify-content: end; /* Center the button horizontally */
+      margin: 20px 0;         /* Vertical spacing */
+    }
+ .resetGame-Button {
+      background-color: rgb(2, 0, 128); /* Button background */
+      color: white;            /* Text color */
+      padding: 10px 20px;      /* Space inside the button */
+      border: none;            /* Remove default border */
+      border-radius: 5px;      /* Rounded corners */
+      cursor: pointer;         /* Pointer on hover */
+      font-size: 16px;         /* Text size */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    /* Hover effect */
+    .resetGame-Button:hover {
+      background-color: darkgreen;
+    }
+    a {
+      color: white;           /* White text */
+      text-decoration: none;  /* Remove underline */
+    }
+
+    /* Hover effect for links */
+    a:hover {
+      color: #f0f0f0;         /* Slightly brighter on hover */
+    }
