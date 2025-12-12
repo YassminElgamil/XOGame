@@ -1,5 +1,5 @@
  .newGame-Button {
-      background-color: green; /* Button background */
+      background-color: #01D0FB; /* Button background */
       color: white;            /* Text color */
       padding: 10px 20px;      /* Space inside the button */
       border: none;            /* Remove default border */
@@ -12,7 +12,7 @@
 
     /* Hover effect */
     .newGame-Button:hover {
-      background-color: darkgreen;
+      background-color: #01C0FA;
     }
     a {
       color: white;           /* White text */
