@@ -1,7 +1,11 @@
+ .newGame-Container{
+  margin-top: 20px;
+  padding: 10px 10px; 
+ }
  .newGame-Button {
       background-color: #01D0FB; /* Button background */
       color: white;            /* Text color */
-      padding: 10px 20px;      /* Space inside the button */
+      padding: 10px 30px;      /* Space inside the button */
       border: none;            /* Remove default border */
       border-radius: 5px;      /* Rounded corners */
       cursor: pointer;         /* Pointer on hover */
