@@ -16,7 +16,7 @@ export default function GameNavBar() {
           </Link>
           <ul className="navbar-menu">
             <li>
-              <Link to="" className="nav-link">
+              <Link to="/XOGame" className="nav-link">
                 Home
               </Link>
             </li>

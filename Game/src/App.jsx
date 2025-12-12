@@ -8,7 +8,7 @@ import Contact from "./Pages/Contact/Contact.jsx";
 
 let router = createBrowserRouter([
   {
-    path: "/",
+    path: "/XOGame",
     element: <Home />,
     children: [
       { index: true, element: <NewGameButton /> },
