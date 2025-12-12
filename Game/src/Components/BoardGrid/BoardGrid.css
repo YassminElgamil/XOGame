@@ -1,4 +1,4 @@
-.board {
+.boardGrid {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -6,12 +6,12 @@
   align-items: center;
 }
 
-.board-row {
+.boardGrid-row {
   display: flex;
   gap: 1rem;
 }
 
-.board-row button {
+.boardGrid-row button {
   width: 60px;
   height: 60px;
   font-size: 24px;
@@ -23,16 +23,16 @@
   background-color: white;
 }
 
-.board-row button:hover {
+.boardGrid-row button:hover {
   transform: scale(1.08);
   background-color: #f3f3f3;
 }
 
-.board-row button:focus {
+.boardGrid-row button:focus {
   outline: none;
 }
 
-.board-row button:active {
+.boardGrid-row button:active {
   outline: none;
   border-color: #444; 
 }

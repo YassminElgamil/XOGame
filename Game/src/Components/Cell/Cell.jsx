@@ -1,4 +1,4 @@
-export default function GameButton({ player, onButtonClick }) {
+export default function Cell({ player, onButtonClick }) {
   return (
     <>
       <div

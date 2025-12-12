@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Board from "../Board/Board";
+import BoardGrid from "../../Components/BoardGrid/BoardGrid";
 
 export default function Home() {
   let [player, setPlayer] = useState("X");
@@ -34,7 +34,11 @@ export default function Home() {
       boardList[rowIndex].every((val) => val === player) ||
       boardList.every((row) => row[colIndex] === player) ||
       (rowIndex === colIndex &&
-        boardList.every((row, idx) => row[idx] === player));
+        boardList.every((row, idx) => row[idx] === player)) ||
+      (rowIndex + colIndex === boardList.length - 1 &&
+        boardList.every(
+          (row, idx) => row[boardList.length - 1 - idx] === player
+        ));
 
     setHasWinner(hasWinner);
 
@@ -63,7 +67,7 @@ export default function Home() {
             <div>it's a draw!</div>
           )
         ) : (
-          <Board
+          <BoardGrid
             boardList={boardList}
             player={player}
             OnButtonChanged={OnButtonChanged}

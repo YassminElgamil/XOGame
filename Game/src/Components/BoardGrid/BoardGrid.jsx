@@ -1,14 +1,14 @@
-import GameButton from "../GameButton/GameButton";
-import "./Board.css";
+import Cell from "../Cell/Cell";
+import "./BoardGrid.css";
 
-export default function Board({ boardList, player, OnButtonChanged }) {
+export default function BoardGrid({ boardList, player, OnButtonChanged }) {
   return (
     <>
-      <div className="board">
+      <div className="boardGrid">
         {boardList.map((row, rowIndex) => (
-          <div className="board-row" key={rowIndex}>
+          <div className="boardGrid-row" key={rowIndex}>
             {row.map((cell, colIndex) => (
-              <GameButton
+              <Cell
                 key={`${rowIndex}-${colIndex}`}
                 player={cell}
                 onButtonClick={() =>
